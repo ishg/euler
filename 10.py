@@ -1,3 +1,5 @@
+# Find sum of primes below number n
+
 import math
 
 def isPrime(n):
@@ -13,13 +15,14 @@ def isPrime(n):
     i += 1
   return True
 
-def getPrime(index):
-  i = 1
-  p = 3
-  while i < index:
-    if isPrime(p):
-      i += 1
-    p += 2
-  return p - 2
+def findSumOfPrimesBelow(n):
+  sum = 0
+  for i in range(2, n):
+    if isPrime(i):
+      sum += i
+      print i
+  return sum
 
-print getPrime(10001)
+print findSumOfPrimesBelow(2000000)
+
+# 142913828922
