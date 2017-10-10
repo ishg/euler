@@ -23,3 +23,5 @@ def getNthPrime(index):
   return p - 2
 
 print getNthPrime(10001)
+
+# 104743
